@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: Impact;
+    color: rgb(3, 0, 41);
+    height: 100%;
+}
+
+.nav {
+    flex: 1 1 200px;
+    height: 100vh;
+    background: #f9f7ff; /* Old Browsers */
+    background: -webkit-linear-gradient(right,#f9f7ff,#ffffff); /*Safari 5.1-6*/
+    background: -o-linear-gradient(right,#f9f7ff,#ffffff); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(right,#f9f7ff,#ffffff); /*Fx 3.6-15*/
+    background: linear-gradient(to left, #f9f7ff, #ffffff); /*Standard*/
+}
+
+.logo {
+    font-size: 30px;
+    margin: 10px 0 0 10px;
+}
+
+.logo span {
+    font-size: 24px;
+}
+
+.menu ul {
+    margin: 40px 0 0 0;
+    padding: 0;
+}
+
+.menu ul li {
+    list-style-type: none;
+    font-size: 24px;
+    padding: 0 0 0 10px;
+}
+
+.menu ul li:hover {
+    background-color: rgb(229, 227, 255);
+    box-shadow: 0 0 2px 0 rgb(150, 150, 150);
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.portfolio {
+    background-color: rgb(240, 235, 255);
+    display: flex;
+    flex: 4 1 200px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: 100vh;
+    border-left: 1px solid rgb(156, 153, 166);
+    border-right: 1px solid rgb(156, 153, 166);
+    overflow: auto;
+}
+
+.portfolio .item {
+    background-color: rgb(255, 255, 255);
+    max-width: 320px;
+    min-width: 100px;
+    font-size: 24px;
+    box-shadow: 0 0 6px 0 rgb(0, 0, 0);
+    margin: 50px 20px 0 20px;
+    transition: transform linear 0.1s, box-shadow linear 0.1s;
+}
+
+.portfolio .item:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 8px 0 rgb(0, 0, 0);
+    cursor: pointer;
+    transition: transform linear 0.1s, box-shadow linear 0.1s;
+}
+
+.portfolio .item:last-child {
+    margin-bottom: 50px;
+}
+
+.portfolio .item h1 {
+    font-size: 24px;
+    margin: 0 0 0 1%;
+    display: inline-block;
+}
+
+.portfolio .item h2 {
+    font-size: 18px;
+    display: inline-block;
+    margin: 0 0 1% 1%;
+}
+
+.portfolio .item .github {
+    width: 30px;
+    display: inline-block;
+    margin: 0 0 -5px 0;
+}
+
+.portfolio .item .tag {
+    font-size: 18px;
+    display: inline-block;
+    padding: 0 5px 0 5px;
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+.portfolio .item .react {
+    background-color: rgb(0, 174, 239);
+}
+
+.portfolio .item .django {
+    background-color: rgb(0, 114, 54);
+}
+
+.portfolio .item .python {
+    background-color: rgb(247, 148, 29);
+}
+
+.portfolio img {
+    width: 98%;
+    display: block;
+    margin: 1% auto;
+}
+
+.info {
+    background-color: rgb(245, 242, 255);
+    flex: 4 1 200px;
+    height: 100vh;
+    overflow: auto;
+}
+
+.info img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 94%;
+}
+
+.info h1 {
+    font-size: 36px;
+    margin: 0 0 0 4%;
+    display: inline-block;
+}
+
+.info h2 {
+    font-size: 24px;
+    display: inline-block;
+    margin: 0 0 1% 4%;
+}
+
+.info .github {
+    width: 40px;
+    display: inline-block;
+    margin: 0 0 -5px 0;
+}
+
+.info .tag {
+    font-size: 18px;
+    display: inline-block;
+    padding: 0 5px 0 5px;
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+.info .react {
+    background-color: rgb(0, 174, 239);
+}
+
+.info .django {
+    background-color: rgb(0, 114, 54);
+}
+
+.info .python {
+    background-color: rgb(247, 148, 29);
+}
+
+.info .about h2 {
+    float: left;
+    height: 100%;
+    margin: 0 0 1% 4%;
+    padding-right: 10px;
+}
+
+.info .about {
+    font-size: 18px;
+    text-align: justify;
+    display: inline-block;
+}
+
+.info .about p {
+    margin: 5px 3% 40px 100px;
+}
