@@ -1,8 +1,23 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import './Nav.scss'
 
 class Nav extends Component {
     render() {
-        return (<p>Nav panel</p>)
+        return (
+            <div className="nav">
+                <div className="logo">Ivan Sharapenkov <br /> <span>Portfolio Page</span></div>
+                <div className="menu">
+                    <ul>
+                        <li><Link to="/">Work</Link></li>
+                        <li><Link to="/about-me">About me</Link></li>
+                        <li><Link to="/about">About this site</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
+                        <li><Link to="/cv">CV</Link></li>
+                    </ul>
+                </div>
+            </div>
+        )
     }
 }
 
