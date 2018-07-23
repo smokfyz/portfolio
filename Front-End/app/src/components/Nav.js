@@ -10,9 +10,7 @@ class Nav extends Component {
                 <div className="menu">
                     <ul>
                         <li><Link to="/">Work</Link></li>
-                        <li><Link to="/about">About me</Link></li>
                         <li><Link to="/contact">Contact</Link></li>
-                        <li><Link to="/cv">CV</Link></li>
                     </ul>
                 </div>
             </div>

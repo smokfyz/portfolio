@@ -1,22 +1,24 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
+import { init as firebaseInit } from './assets/js/firebase'
 import Nav from './components/Nav'
 import Work from './components/Work'
-import About from './components/About'
 import Contact from './components/Contact'
-import Cv from './components/Cv'
 import './App.scss'
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    firebaseInit()
+  }
+
   render() {
     return (
       <div className="App">
         <Nav />
         <Switch>
           <Route exact path="/" component={Work} />
-          <Route exact path="/about" component={About} />
           <Route exact path="/contact" component={Contact} />
-          <Route exact path="/cv" component={Cv} />
         </Switch>
       </div>
     )
