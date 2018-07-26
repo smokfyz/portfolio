@@ -1,5 +1,5 @@
 .portfolio {
-    background-color: rgb(240, 235, 255);
+    background-color: rgb(49, 49, 49);
     display: flex;
     flex: 4 1 200px;
     flex-wrap: wrap;
@@ -7,12 +7,11 @@
     align-items: flex-start;
     align-content: flex-start;
     height: 100vh;
-    border-left: 1px solid rgb(156, 153, 166);
-    border-right: 1px solid rgb(156, 153, 166);
     overflow: auto;
 
     .item {
         background-color: rgb(255, 255, 255);
+        border-radius: 4px;
         max-width: 320px;
         min-width: 100px;
         font-size: 24px;
@@ -79,15 +78,17 @@
 }
 
 .info {
-    background-color: rgb(245, 242, 255);
+    background-color: white;
     flex: 4 1 200px;
     height: 100vh;
     overflow: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     img {
         display: block;
         margin: 0 auto;
-        margin-top: 40px;
+        margin-top: 20px;
         width: 94%;
     }
 
