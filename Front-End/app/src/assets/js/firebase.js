@@ -1,7 +1,6 @@
 import * as firebase from 'firebase'
-let database
 
-export const init = () => { 
+export default () => { 
     let config = {
         apiKey: "AIzaSyBqCZq1ian4xKiQyG91lCoyGz43Yb_fpws",
         authDomain: "portfolio-2c774.firebaseapp.com",
@@ -11,5 +10,7 @@ export const init = () => {
         messagingSenderId: "241322847847"
     }
     firebase.initializeApp(config)
-    database = firebase.database()
+    return {
+        database: firebase.database()
+    }
 }

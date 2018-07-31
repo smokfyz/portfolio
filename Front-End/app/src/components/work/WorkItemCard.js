@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import SiteImg from '../assets/images/site.jpg'
-import GitHub from '../assets/images/github.png'
+import SiteImg from '../../assets/images/site.jpg'
+import GitHub from '../../assets/images/github.png'
 
 class WorkItemCard extends Component {
     render() {

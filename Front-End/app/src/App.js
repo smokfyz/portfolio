@@ -1,15 +1,16 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
-import { init as firebaseInit } from './assets/js/firebase'
-import Nav from './components/Nav'
-import Work from './components/Work'
-import Contact from './components/Contact'
+import apiInit from './assets/js/api/init'
+import Nav from './components/nav/Nav'
+import Work from './components/work/Work'
+import Contact from './components/contact/Contact'
 import './App.scss'
 
 class App extends Component {
   constructor(props) {
     super(props)
-    firebaseInit()
+    let api = apiInit()
+    console.table(api);
   }
 
   render() {
