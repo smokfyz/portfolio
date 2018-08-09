@@ -4,10 +4,12 @@ import GitHub from '../../assets/images/github.png'
 
 class WorkItem extends Component {
     render() {
+        const { name } = this.props.item
+
         return (
             <div className="info">
                 <img src={SiteImg} alt="Site" />
-                <h1>We Band(Social Network)<span className="github"><img  src={GitHub} alt="GitHub" /></span></h1><br />
+                <h1>{name}<span className="github"><img  src={GitHub} alt="GitHub" /></span></h1><br />
                 <h2>Using:</h2>
                 <div className="tag react">React</div>
                 <div className="tag django">Django</div>

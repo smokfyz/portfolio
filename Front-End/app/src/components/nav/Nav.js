@@ -5,7 +5,7 @@ import './Nav.scss'
 class Nav extends Component {
     render() {
         return (
-            <div className="nav">
+            <div className="nav" onClick={this.toggleNav}>
                 <div className="logo">Ivan Sharapenkov <br /> <span>Portfolio Page</span></div>
                 <div className="menu">
                     <ul>

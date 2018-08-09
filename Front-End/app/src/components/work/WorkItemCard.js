@@ -4,10 +4,11 @@ import GitHub from '../../assets/images/github.png'
 
 class WorkItemCard extends Component {
     render() {
+        const { name } = this.props.item
         return (
-            <div className="item">
+            <div className="item" onClick={this.props.onClick}>
                 <img src={SiteImg} alt="Site" />
-                <h1>We Band(Social Network)<span className="github"><img  src={GitHub} alt="GitHub" /></span></h1>
+                <h1>{ name }<span className="github"><img  src={GitHub} alt="GitHub" /></span></h1>
                 <h2>Using:</h2>
                 <div className="tag react">React</div>
                 <div className="tag django">Django</div>

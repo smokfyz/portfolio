@@ -4,7 +4,12 @@
     background-color: white;
     box-shadow: 1px 0 20px 1px black;
     z-index: 9999;
-    transition: box-shadow linear 0.2s;
+    transition: box-shadow linear 0.2s, width linear 0.2s;
+}
+
+.close {
+    width: 50px;
+    transition: width linear 0.2s;
 }
 
 .nav:hover {

@@ -1,0 +1,11 @@
+.contact {
+    height: 100vh;
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    flex: 1 1;
+
+    .about {
+        flex: 1 1;
+        width: 100px;
+    }
+}

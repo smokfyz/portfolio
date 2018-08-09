@@ -13,9 +13,14 @@ export default (database) => {
         database.ref('items/' + itemId).remove()
     }
 
+    function getItems() {
+        return database.ref('items').once('value')
+    }
+
     return {
         add: addItem,
         update: updateItem,
-        remove: removeItem
+        remove: removeItem,
+        get: getItems
     }
 }

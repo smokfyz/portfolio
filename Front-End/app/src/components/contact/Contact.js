@@ -1,8 +1,13 @@
 import React, { Component } from 'react'
+import './Contact.scss'
 
 class Contact extends Component {
     render() {
-        return (<p>Contact Component</p>)
+        return (
+            <div className="contact">
+                <div className="about"></div>
+            </div>
+        )
     }
 }
 
