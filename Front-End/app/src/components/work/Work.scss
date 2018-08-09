@@ -149,3 +149,19 @@
         }
     }
 }
+
+.add-work-form {
+    display: block;
+    margin: 50px;
+    margin-left: 100px;
+
+    input {
+        display: block;
+        margin-top: 20px;
+    }
+
+    textarea {
+        display: block;
+        margin-top: 20px;
+    }
+}
